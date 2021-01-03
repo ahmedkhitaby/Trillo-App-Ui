@@ -78,7 +78,7 @@
                       </li>
                   </ul>
                   <div class="legal">
-                      &copy; 2020 by trillo. All rights reserved
+                      &copy; <span id="year"></span> by trillo. All rights reserved
                   </div>
                </nav>
                <main class="hotel-view">
@@ -86,5 +86,10 @@
                </main>
            </div>
        </div>
+       <script>
+           const date = new Date();
+           const currentYear = date.getFullYear();
+           document.getElementById('year').innerText = currentYear;
+       </script>
     </body>
 </html>
